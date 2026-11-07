@@ -16,19 +16,16 @@ export function TeamSection() {
       />
 
       <Container>
-        <RevealGroup as="div" className="mt-12 grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
-          {members.map((member, index) => (
-            <RevealItem key={member.name}>
+        <RevealGroup as="div" className="mx-auto mt-12 grid max-w-4xl grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
+          {members.map((member) => (
+            <RevealItem key={member.name} className="h-full">
               <TiltCard className="h-full">
-                <article
-                  className="group relative h-full overflow-hidden rounded-2xl border border-sand-200 bg-white"
-                  style={{ transitionDelay: `${index * 40}ms` }}
-                >
-                  {/* Area foto — rasio konsisten, overlay nama saat hover */}
+                <article className="group h-full overflow-hidden rounded-2xl border border-sand-200 bg-white transition-shadow duration-300 hover:shadow-xl hover:shadow-primary-900/10">
+                  {/* Area foto — rasio konsisten, overlay keahlian saat hover */}
                   <div className="relative aspect-[4/5] overflow-hidden bg-primary-800">
                     <TeamPhoto name={member.name} photo={member.photo} />
 
-                    {/* Gradient? Tidak — overlay solid semi-transparan */}
+                    {/* Overlay solid semi-transparan */}
                     <div className="absolute inset-x-0 bottom-0 translate-y-2 bg-primary-950/80 p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
                       <p className="font-mono text-xs text-primary-100">{member.expertise}</p>
                     </div>

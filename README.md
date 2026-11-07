@@ -70,13 +70,18 @@ content yang sesuai — tidak perlu menyentuh komponen.
 
 ## Menambah Foto Anggota Tim
 
+Saat ini foto anggota tim berisi **placeholder otomatis** (siluet + inisial
+warna brand) yang dapat diganti kapan saja.
+
 1. Taruh foto di `public/team/` (rasio 4:5 direkomendasikan), contoh:
    `public/team/habib-abdullah-faqih.jpg`
 2. Buka `src/content/team.ts`, pastikan field `photo` pada anggota bersangkutan
    sudah menunjuk ke `/team/habib-abdullah-faqih.jpg`.
+3. Untuk mengubah nama atau keahlian, edit array `members` di file yang sama —
+   tidak perlu menyentuh komponen sama sekali.
 
-Bila foto belum ada atau gagal dimuat, halaman otomatis menampilkan monogram
-inisial anggota tersebut — tidak ada broken image.
+Bila field `photo` dikosongkan atau file gagal dimuat, halaman otomatis
+menampilkan monogram inisial anggota tersebut — tidak ada broken image.
 
 ## Catatan Teknis
 
@@ -89,5 +94,4 @@ inisial anggota tersebut — tidak ada broken image.
 ## Tim Kazeem
 
 Habib Abdullah Faqih (Hustler) • Moch Adi Setiawan (Hipster) •
-Maritza Indira Arkaputri (Hustler) • Arika Norma Wahyu Dorroty (Hacker) •
-Agung Dwi Prayitno (Hipster) — Udinus Kediri.
+Arika Norma Wahyu Dorroty (Hacker) — Udinus Kediri.

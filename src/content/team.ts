@@ -14,9 +14,9 @@ export interface Member {
 
 export const teamSection = {
   eyebrow: "Tim Kazeem",
-  title: "Lima mahasiswa Udinus Kediri",
+  title: "Tiga orang, tiga peran utama",
   description:
-    "Tim dengan keahlian saling melengkapi — IT, marketing, dan desain — dipimpin oleh seorang Leader yang menumbuhkan kerja sama tim.",
+    "Tim inti Kazeem: Hustler yang mendorong bisnis, Hipster yang merancang pengalaman, dan Hacker yang membangun platform.",
 } as const;
 
 export const members: Member[] = [
@@ -33,21 +33,9 @@ export const members: Member[] = [
     photo: "/team/moch-adi-setiawan.jpg",
   },
   {
-    name: "Maritza Indira Arkaputri",
-    role: "Hustler",
-    expertise: "Social Media & Marketing",
-    photo: "/team/maritza-indira-arkaputri.jpg",
-  },
-  {
     name: "Arika Norma Wahyu Dorroty",
     role: "Hacker",
     expertise: "Database Engineer & Web Developer",
     photo: "/team/arika-norma-wahyu-dorroty.jpg",
-  },
-  {
-    name: "Agung Dwi Prayitno",
-    role: "Hipster",
-    expertise: "Desainer Grafis & Content Creator",
-    photo: "/team/agung-dwi-prayitno.jpg",
   },
 ];
