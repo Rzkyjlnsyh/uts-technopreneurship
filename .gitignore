@@ -1,0 +1,31 @@
+# Dependencies
+node_modules/
+.pnp/
+.pnp.*
+
+# Build output
+.next/
+out/
+build/
+dist/
+
+# Env
+.env
+.env*.local
+.env.production
+
+# Local workspace — agent notes & source material (tidak masuk repo)
+.work/
+
+# Dokumen sementara / materi mentah lokal
+*.pdf
+
+# Misc
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.tsbuildinfo
+next-env.d.ts
